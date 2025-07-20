@@ -1,0 +1,62 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  background-color: black;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+h1{
+    color: #fff;
+    padding-bottom: 10px;
+}
+.content {
+  position: relative;
+  z-index: 2;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.planet {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 40% 40%, #2b2bff, #0b0b3b);
+  box-shadow: 0 0 50px rgba(0, 0, 255, 0.6);
+  position: relative;
+  animation: rotate 60s linear infinite;
+}
+
+.welcome-button {
+  margin-top: 30px;
+  padding: 15px 30px;
+  background: transparent;
+  border: 2px solid rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.welcome-button:hover {
+  background: white;
+  color: black;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
