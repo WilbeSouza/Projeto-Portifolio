@@ -1,4 +1,4 @@
-html, body {
+/*html, body {
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -6,7 +6,22 @@ html, body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: white;
   background-color: black;
+}*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
 }
+
 
 canvas {
   position: absolute;
@@ -18,9 +33,26 @@ canvas {
 h1{
     color: #fff;
     padding-bottom: 10px;
+    text-align: center;
+    padding: 40px;
+}
+h2 {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 0 0 30px 10px yellow;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+  font-weight: 400;
 }
 .content {
-  position: relative;
+  position: center;
   z-index: 2;
   height: 100vh;
   display: flex;
@@ -46,9 +78,14 @@ h1{
   background: transparent;
   border: 2px solid rgb(0, 0, 0);
   color: rgb(255, 255, 255);
-  font-size: 1.2em;
+  font-size: 1.6rem;
   cursor: pointer;
   transition: background 0.3s, color 0.3s;
+  border-radius: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 50px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .welcome-button:hover {
